@@ -16,21 +16,23 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748*.3gpp    audio&#x2F;3gpp, video&#x2F;3gpp*.ac3    audio&#x2F;ac3*.asf       allpication&#x2F;vnd.ms-asf*.au           audio&#x2F;basic*.c">
+    <meta name="description" content="1.快速开始1.1安装 安装命令  1go get github.com&#x2F;360EntSecGroup-Skylar&#x2F;excelize   如果您使用 Go Modules 管理软件包，请使用下面的命令来安装最新版本。  1复制代码go get github.com&#x2F;360EntSecGroup-Skylar&#x2F;excelize&#x2F;v2  1.2更新 更新命令  1复制代码go get -u gith">
 <meta property="og:type" content="article">
-<meta property="og:title" content="contentType类型详细版">
-<meta property="og:url" content="http://example.com/2022/05/03/contentType%E7%B1%BB%E5%9E%8B%E8%AF%A6%E7%BB%86%E7%89%88/index.html">
+<meta property="og:title" content="golang-Excel">
+<meta property="og:url" content="http://example.com/2022/05/03/golang-Excel/index.html">
 <meta property="og:site_name" content="Liups&#39;s Blog">
-<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748*.3gpp    audio&#x2F;3gpp, video&#x2F;3gpp*.ac3    audio&#x2F;ac3*.asf       allpication&#x2F;vnd.ms-asf*.au           audio&#x2F;basic*.c">
+<meta property="og:description" content="1.快速开始1.1安装 安装命令  1go get github.com&#x2F;360EntSecGroup-Skylar&#x2F;excelize   如果您使用 Go Modules 管理软件包，请使用下面的命令来安装最新版本。  1复制代码go get github.com&#x2F;360EntSecGroup-Skylar&#x2F;excelize&#x2F;v2  1.2更新 更新命令  1复制代码go get -u gith">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-03T07:33:38.000Z">
-<meta property="article:modified_time" content="2022-05-03T07:49:39.423Z">
+<meta property="og:image" content="http://example.com/2022/05/03/golang-Excel/image-20220503161134166.png">
+<meta property="article:published_time" content="2022-05-03T08:00:42.000Z">
+<meta property="article:modified_time" content="2022-05-03T08:15:03.499Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="contentType类型">
+<meta property="article:tag" content="Excel、golang">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2022/05/03/golang-Excel/image-20220503161134166.png">
   
   
-  <title>contentType类型详细版 - Liups&#39;s Blog</title>
+  <title>golang-Excel - Liups&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -177,7 +179,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="contentType类型详细版">
+            <span class="h2" id="subtitle" title="golang-Excel">
               
             </span>
 
@@ -187,7 +189,7 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-05-03 15:33" pubdate>
+      <time datetime="2022-05-03 16:00" pubdate>
         2022年5月3日 下午
       </time>
     </span>
@@ -198,7 +200,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.2k 字
+      1.3k 字
     </span>
   
 
@@ -236,22 +238,51 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">contentType类型详细版</h1>
+            <h1 style="display: none">golang-Excel</h1>
             
             <div class="markdown-body">
-              <figure class="highlight stylus"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></div></td><td class="code"><pre><code class="hljs stylus">*.<span class="hljs-number">3</span>gpp    audio/<span class="hljs-number">3</span>gpp, video/<span class="hljs-number">3</span>gpp<br>*<span class="hljs-selector-class">.ac3</span>    audio/ac3<br>*<span class="hljs-selector-class">.asf</span>       allpication/vnd<span class="hljs-selector-class">.ms-asf</span><br>*<span class="hljs-selector-class">.au</span>           audio/basic<br>*<span class="hljs-selector-class">.css</span>           text/css<br>*<span class="hljs-selector-class">.csv</span>           text/csv<br>*<span class="hljs-selector-class">.doc</span>    application/msword    <br>*<span class="hljs-selector-class">.dot</span>    application/msword    <br>*<span class="hljs-selector-class">.dtd</span>    application/xml-dtd    <br>*<span class="hljs-selector-class">.dwg</span>    image/vnd<span class="hljs-selector-class">.dwg</span>    <br>*<span class="hljs-selector-class">.dxf</span>      image/vnd<span class="hljs-selector-class">.dxf</span><br>*<span class="hljs-selector-class">.gif</span>            image/gif    <br>*<span class="hljs-selector-class">.htm</span>    text/<span class="hljs-selector-tag">html</span>    <br>*<span class="hljs-selector-class">.html</span>    text/<span class="hljs-selector-tag">html</span>    <br>*<span class="hljs-selector-class">.jp2</span>            image/jp2    <br>*<span class="hljs-selector-class">.jpe</span>       image/jpeg<br>*<span class="hljs-selector-class">.jpeg</span>    image/jpeg<br>*<span class="hljs-selector-class">.jpg</span>          image/jpeg    <br>*<span class="hljs-selector-class">.js</span>       text/javascript, application/javascript    <br>*<span class="hljs-selector-class">.json</span>    application/json    <br>*<span class="hljs-selector-class">.mp2</span>    audio/mpeg, video/mpeg    <br>*<span class="hljs-selector-class">.mp3</span>    audio/mpeg    <br>*<span class="hljs-selector-class">.mp4</span>    audio/mp4, video/mp4    <br>*<span class="hljs-selector-class">.mpeg</span>    video/mpeg    <br>*<span class="hljs-selector-class">.mpg</span>    video/mpeg    <br>*<span class="hljs-selector-class">.mpp</span>    application/vnd<span class="hljs-selector-class">.ms-project</span>    <br>*<span class="hljs-selector-class">.ogg</span>    application/ogg, audio/ogg    <br>*<span class="hljs-selector-class">.pdf</span>    application/pdf    <br>*<span class="hljs-selector-class">.png</span>    image/png    <br>*<span class="hljs-selector-class">.pot</span>    application/vnd<span class="hljs-selector-class">.ms-powerpoint</span>    <br>*<span class="hljs-selector-class">.pps</span>    application/vnd<span class="hljs-selector-class">.ms-powerpoint</span>    <br>*<span class="hljs-selector-class">.ppt</span>    application/vnd<span class="hljs-selector-class">.ms-powerpoint</span>    <br>*<span class="hljs-selector-class">.rtf</span>            application/rtf, text/rtf    <br>*<span class="hljs-selector-class">.svf</span>           image/vnd<span class="hljs-selector-class">.svf</span>    <br>*<span class="hljs-selector-class">.tif</span>         image/tiff    <br>*<span class="hljs-selector-class">.tiff</span>       image/tiff    <br>*<span class="hljs-selector-class">.txt</span>           text/plain    <br>*<span class="hljs-selector-class">.wdb</span>    application/vnd<span class="hljs-selector-class">.ms-works</span>    <br>*<span class="hljs-selector-class">.wps</span>    application/vnd<span class="hljs-selector-class">.ms-works</span>    <br>*<span class="hljs-selector-class">.xhtml</span>    application/xhtml+xml    <br>*<span class="hljs-selector-class">.xlc</span>      application/vnd<span class="hljs-selector-class">.ms-excel</span>    <br>*<span class="hljs-selector-class">.xlm</span>    application/vnd<span class="hljs-selector-class">.ms-excel</span>    <br>*<span class="hljs-selector-class">.xls</span>           application/vnd<span class="hljs-selector-class">.ms-excel</span>    <br>*<span class="hljs-selector-class">.xlt</span>      application/vnd<span class="hljs-selector-class">.ms-excel</span>    <br>*<span class="hljs-selector-class">.xlw</span>      application/vnd<span class="hljs-selector-class">.ms-excel</span>    <br>*<span class="hljs-selector-class">.xml</span>    text/xml, application/xml    <br>*<span class="hljs-selector-class">.zip</span>            application/zip    <br>*<span class="hljs-selector-class">.xlsx</span>     application/vnd<span class="hljs-selector-class">.openxmlformats-officedocument</span><span class="hljs-selector-class">.spreadsheetml</span>.sheet<br></code></pre></td></tr></table></figure>
+              <h3 id="1-快速开始"><a href="#1-快速开始" class="headerlink" title="1.快速开始"></a>1.快速开始</h3><h4 id="1-1安装"><a href="#1-1安装" class="headerlink" title="1.1安装"></a>1.1安装</h4><ul>
+<li>安装命令</li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs vim"><span class="hljs-keyword">go</span> <span class="hljs-built_in">get</span> github.<span class="hljs-keyword">com</span>/<span class="hljs-number">360</span>EntSecGroup-Skylar/excelize<br></code></pre></td></tr></table></figure>
 
+<ul>
+<li>如果您使用 <a target="_blank" rel="noopener" href="https://blog.golang.org/using-go-modules">Go Modules</a> 管理软件包，请使用下面的命令来安装最新版本。</li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vim">复制代码<span class="hljs-keyword">go</span> <span class="hljs-built_in">get</span> github.<span class="hljs-keyword">com</span>/<span class="hljs-number">360</span>EntSecGroup-Skylar/excelize/v2<br></code></pre></td></tr></table></figure>
+
+<h4 id="1-2更新"><a href="#1-2更新" class="headerlink" title="1.2更新"></a>1.2更新</h4><ul>
+<li>更新命令</li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vim">复制代码<span class="hljs-keyword">go</span> <span class="hljs-built_in">get</span> -<span class="hljs-keyword">u</span> github.<span class="hljs-keyword">com</span>/<span class="hljs-number">360</span>EntSecGroup-Skylar/excelize<br></code></pre></td></tr></table></figure>
+
+<h3 id="2-创建Excel文档"><a href="#2-创建Excel文档" class="headerlink" title="2.创建Excel文档"></a>2.创建Excel文档</h3><p>简单新建例子:</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><span class="hljs-keyword">import</span> (<br>    <span class="hljs-string">&quot;fmt&quot;</span><br>    <span class="hljs-string">&quot;github.com/360EntSecGroup-Skylar/excelize&quot;</span><br>)<br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>    f := excelize.NewFile()<br>    <span class="hljs-comment">// 创建一个工作表</span><br>    index := f.NewSheet(<span class="hljs-string">&quot;test&quot;</span>)<br>    <span class="hljs-comment">// 设置单元格的值</span><br>    f.SetCellValue(<span class="hljs-string">&quot;test&quot;</span>, <span class="hljs-string">&quot;A2&quot;</span>, <span class="hljs-string">&quot;Hello world.&quot;</span>)<br>    <span class="hljs-comment">// 设置工作簿的默认工作表</span><br>    f.SetActiveSheet(index)<br>    <span class="hljs-comment">// 根据指定路径保存文件</span><br>    <span class="hljs-keyword">if</span> err := f.SaveAs(<span class="hljs-string">&quot;test.xlsx&quot;</span>); err != <span class="hljs-literal">nil</span> &#123;<br>        fmt.Println(err)<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<img src="image-20220503161134166.png" srcset="/img/loading.gif" lazyload alt="image-20220503161134166" style="zoom:67%;" />
+
+<h3 id="3-读取Excel文档"><a href="#3-读取Excel文档" class="headerlink" title="3.读取Excel文档"></a>3.读取Excel文档</h3><p>简单读取例子:</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><span class="hljs-keyword">import</span> (<br>    <span class="hljs-string">&quot;fmt&quot;</span><br>    <span class="hljs-string">&quot;github.com/360EntSecGroup-Skylar/excelize&quot;</span><br>)<br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>    f, err := excelize.OpenFile(<span class="hljs-string">&quot;test.xlsx&quot;</span>)<br>    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> &#123;<br>        fmt.Println(err)<br>        <span class="hljs-keyword">return</span><br>    &#125;<br>    <span class="hljs-comment">// 获取工作表中指定单元格的值</span><br>    cell, err := f.GetCellValue(<span class="hljs-string">&quot;test&quot;</span>, <span class="hljs-string">&quot;A2&quot;</span>)<br>    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> &#123;<br>        fmt.Println(err)<br>        <span class="hljs-keyword">return</span><br>    &#125;<br>    <span class="hljs-comment">// 获取 Sheet1 上所有单元格</span><br>    rows, err := f.GetRows(<span class="hljs-string">&quot;Sheet1&quot;</span>)<br>    <span class="hljs-keyword">for</span> _, row := <span class="hljs-keyword">range</span> rows &#123;<br>        <span class="hljs-keyword">for</span> _, colCell := <span class="hljs-keyword">range</span> row &#123;<br>            fmt.Print(colCell, <span class="hljs-string">&quot;\t&quot;</span>)<br>        &#125;<br>        fmt.Println()<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>更多使用方法请参考<a target="_blank" rel="noopener" href="https://www.bookstack.cn/read/excelize-2.3/b2e09ee3ee36ed31.md">https://www.bookstack.cn/read/excelize-2.3/b2e09ee3ee36ed31.md</a></p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/golang/">golang</a>
+                    
+                  </div>
+                
                 
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/contentType%E7%B1%BB%E5%9E%8B/">contentType类型</a>
+                      <a class="hover-with-bg" href="/tags/Excel%E3%80%81golang/">Excel、golang</a>
                     
                   </div>
                 
@@ -268,18 +299,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/05/03/golang-Excel/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">golang-Excel</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/04/23/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                        <span class="hidden-mobile">hexo+github搭建个人博客</span>
+                      <a href="/2022/05/03/contentType%E7%B1%BB%E5%9E%8B%E8%AF%A6%E7%BB%86%E7%89%88/">
+                        <span class="hidden-mobile">contentType类型详细版</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

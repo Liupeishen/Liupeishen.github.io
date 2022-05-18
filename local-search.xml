@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Go关键字fallthrough用法</title>
+    <link href="/2022/05/18/Go%E5%85%B3%E9%94%AE%E5%AD%97fallthrough%E7%94%A8%E6%B3%95/"/>
+    <url>/2022/05/18/Go%E5%85%B3%E9%94%AE%E5%AD%97fallthrough%E7%94%A8%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<h4 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h4><p>fallthrough：Go里面switch默认相当于每个case最后带有break，匹配成功后不会自动向下执行其他case，而是跳出整个switch, 但是可以使用fallthrough强制执行后面的case代码。</p><h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><figure class="highlight go"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></div></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>   test:=<span class="hljs-string">&quot;abc&quot;</span><br>   <span class="hljs-keyword">switch</span> test[<span class="hljs-number">0</span>]&#123;<br>   <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;a&#x27;</span>:<br>      fmt.Println(<span class="hljs-string">&quot;The first word is a&quot;</span>)<br>      <span class="hljs-keyword">fallthrough</span><br>   <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;b&#x27;</span>:<br>      fmt.Println(<span class="hljs-string">&quot;The first word is b&quot;</span>)<br>      <span class="hljs-keyword">fallthrough</span><br>   <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;c&#x27;</span>:<br>      fmt.Println(<span class="hljs-string">&quot;The first word is c&quot;</span>)<br>      <span class="hljs-keyword">fallthrough</span><br>   <span class="hljs-keyword">default</span>:<br>      fmt.Println(<span class="hljs-string">&quot;default case&quot;</span>)<br>   &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p>运行结果:</p><p><img src="/2022/05/18/Go%E5%85%B3%E9%94%AE%E5%AD%97fallthrough%E7%94%A8%E6%B3%95/image-20220518163136308.png" alt="image-20220518163136308"></p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>   test:=<span class="hljs-string">&quot;abc&quot;</span><br>   <span class="hljs-keyword">switch</span> test[<span class="hljs-number">0</span>]&#123;<br>   <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;a&#x27;</span>:<br>      fmt.Println(<span class="hljs-string">&quot;The first word is a&quot;</span>)<span class="hljs-comment">//去掉fallthrough</span><br>   <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;b&#x27;</span>:<br>      fmt.Println(<span class="hljs-string">&quot;The first word is b&quot;</span>)<br>      <span class="hljs-keyword">fallthrough</span><br>   <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;c&#x27;</span>:<br>      fmt.Println(<span class="hljs-string">&quot;The first word is c&quot;</span>)<br>      <span class="hljs-keyword">fallthrough</span><br>   <span class="hljs-keyword">default</span>:<br>      fmt.Println(<span class="hljs-string">&quot;default case&quot;</span>)<br>   &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p><img src="/2022/05/18/Go%E5%85%B3%E9%94%AE%E5%AD%97fallthrough%E7%94%A8%E6%B3%95/image-20220518163244944.png" alt="image-20220518163244944"></p><p>注意:加了fallthrough后，会直接运行【紧跟的后一个】case或default语句，<strong>不论条件是否满足都会执行</strong>，后面的条件并不会再判断了</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>golang</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>golang</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>golang-Excel</title>
     <link href="/2022/05/03/golang-Excel/"/>
     <url>/2022/05/03/golang-Excel/</url>
